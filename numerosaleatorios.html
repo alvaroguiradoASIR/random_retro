@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"/>
+    <link rel="icon" href="imagenes/play.gif" type="image/gif" >
+    
+    
+    <title>Número Aleatorio</title>
+    
+    
+    
+  
+    <style>
+    
+        body {
+            
+        
+        font-size: 10px;
+            
+        position: relative;
+        z-index: 999;             
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+       
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        
+        /*Crea la ilusión de pérdida de señal de una tv*/
+        animation: animate 3.5s linear infinite;
+        background-image: url(imagenes/guitarra.gif);
+       
+        border: 4px solid lawngreen;
+        border-radius: 10px;
+        box-shadow: 0 0 10px green, 0 0 30px green, 
+            inset 0 0 10px green, inset 0 0 30px green;
+        animation: animate .9s linear infinite;    
+        padding: 3em;
+        }    
+    
+        /*Neon CSS*/
+        
+        .neon {
+            
+        
+        font-family: 'Monoton', cursive;
+            
+        text-align: center;
+        font-size: 8em;
+     
+        letter-spacing: 0.15em;    
+       
+        
+        top:50%;
+        left: 50%;
+       
+        border: 4px solid lawngreen;
+        padding: 20px 50px;
+        
+        border-radius: 10px;
+        box-shadow: 0 0 10px green, 0 0 30px green, 
+            inset 0 0 10px green, inset 0 0 30px green;
+        animation: animate .9s linear infinite;
+            
+        }
+        
+       /*Este atributo maneja la opacidad de los elementos en función de sus frames, lo que da la impresión de animación */
+        
+        @keyframes animate 
+        {
+            0%{
+                opacity: 1.2;
+                
+            }
+            
+            30%{
+                
+                opacity: 1.2;
+            }
+            
+            40%{
+                
+                opacity: .5;
+            }
+            
+            50%{
+                
+                opacity: 1;
+            }
+            
+            100%{
+                
+                opacity: 1.2;
+            }
+        }
+            
+        h1 {
+            
+          margin: 0;
+          padding: 0;
+          font-size: 10em;
+          color: lawngreen;
+          text-shadow: 0 0 10px green, 0 0 20px green, 0 0 80px green, 0 0 120px green;
+          
+        }
+        
+        h1 span {
+            
+            animation: animate .5s linear infinite;
+        }
+        
+        /*Establecemos la animación para cada letra de las palabras "Mínimo" y "Máximo"*/
+        
+        h1 span:nth-child(1){
+            
+            animation-delay: .45s;
+        }
+        h1 span:nth-child(2){
+            
+            animation-delay: .3s;
+        }
+        h1 span:nth-child(3){
+            
+            animation-delay: .55s;
+        }
+        h1 span:nth-child(4){
+            
+            animation-delay: .25s;
+        }
+        h1 span:nth-child(6){
+            
+            animation-delay: .45s;
+        }
+        h1 span:nth-child(7){
+            
+            animation-delay: .2s;
+        }
+        
+      /*Utilizamos transform para aumentar y decrementar el ángulo 
+        de los bordes en el eje X*/
+        
+        .pink {
+            
+            
+            transform: skewX(-5deg);
+            
+        }
+        
+        .blue {
+            
+            transform: skewX(+5deg);
+            
+            
+        }
+        
+       
+          
+            
+        
+        
+        
+        
+        /*CSS Boton*/ 
+       
+        #boton {
+         background-image: url(imagenes/boton.gif);
+        background-size: 400px 400px;   
+        margin: 3em;
+        width: 400px;
+        height: 400px;
+        
+            
+        }
+        
+        
+        #boton {
+            
+            background-image: url(imagenes/boton.gif);
+            text-align: center;
+            padding: 1em;
+            margin: 3em;
+            width: 400px;
+            height: 400px;
+            border: thick ridge lawngreen;
+            border-radius: 5px; 
+            animation: animate 3.5s linear infinite;
+        }
+        
+        
+        /*Fin CSS Boton*/
+        
+        
+        
+        
+        
+        /*Div que actúa como footer de la página*/
+        
+        #Cabecera {
+            
+        border: thick ridge lawngreen;
+        border-radius: 5px;
+        text-align: center;
+        background-image: url(imagenes/aha.gif);
+        background-repeat: repeat-x;
+        background-size: contain;
+        color: black;
+        margin: 30px;
+        padding: 1px;
+            
+        box-shadow: 0 0 10px green, 0 0 30px green, 
+        inset 0 0 10px green, inset 0 0 30px green;    
+        animation: animate 3.5s linear infinite;    
+            
+        }
+        
+
+        
+        /*El margen esta pensado para que dentro de nuestro div, se coloque siempre centrado respecto a el*/
+        
+        #Apartado1 {
+            
+        width: 1000px;
+        background-image:url(imagenes/rayos.gif);
+        background-repeat: no-repeat;
+        background-size: 1050px 1050px;
+        border: thick ridge lawngreen;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 1em;
+            
+        
+            
+        box-shadow: 0 0 10px green, 0 0 30px green, 
+        inset 0 0 10px green, inset 0 0 30px green;    
+        animation: animate 3.5s linear infinite;
+        }
+        
+        #Apartado2{
+            
+            text-align: center;
+        }
+        
+        #input1{
+            
+            text-align: center;
+        }
+        
+        #input2{
+            
+            text-align: center;
+        }
+        
+     
+        p{
+            
+        color: white;
+            
+        }
+        
+        /*CSS de las cajas input*/
+        
+        #minimo {
+          width: 400px;  
+          height:200px;
+          font-size:30pt;
+          color:white;
+          background-image: url(imagenes/super.gif);
+          
+        }
+        
+        #maximo{
+            
+            width: 400px;
+            height:200px;
+            font-size:30pt;
+            color:white;
+            background-image: url(imagenes/super.gif);
+            
+        }
+        
+        /*CLASE "span"*/
+        
+        .span {
+            
+            background-color: black;
+            border-radius: 4px;
+            border-style: ridge;
+            padding: 5px;
+        }
+    </style>
+    
+    <script>
+    
+    /*Función que calcula un número aleatorio*/    
+
+        
+        
+    function getRandom(){
+        
+    var minimo = parseInt(document.getElementById("minimo").value);   
+    var maximo = parseInt(document.getElementById("maximo").value);     
+    
+        
+       
+        
+    var aleatorio = Math.floor(Math.random() * (maximo - minimo + 1) + minimo);   
+    
+        
+    return aleatorio;
+        
+        
+    }
+        
+        
+    
+    function imagenesysonidos(){
+        
+    var minimo = parseInt(document.getElementById("minimo").value);   
+    var maximo = parseInt(document.getElementById("maximo").value);
+     
+  
+     /*En caso de que el número introducido en mínimo sea mayor que el introducido
+     en máximo, la página se cambiará por otra simbolizando el error*/
+        
+     if(minimo > maximo){
+
+       
+     window.open("warning.html","_self");
+      
+    }    
+        
+    var numero = getRandom();    
+        
+    /*En caso de que el número esté entre 0 y 10 mostraremos las imágenes y los sonidos correspondientes*/    
+        
+        
+        
+    if(numero >= 0 || numero <= 10){
+    
+    /*Utilizamos uns switch para comparar el número con el intervalo [0,10]*/ 
+      
+    /*Mostramos para cada número su correspondiente gif y mp3*/    
+        
+    switch (numero) {
+    case 0:
+    document.getElementById("imagen").src = "imagenes/cero.gif";
+    document.getElementById("sonido").src = "sonidos/cero.mp3";
+    break;        
+    case 1:
+    document.getElementById("imagen").src = "imagenes/uno.gif";
+    document.getElementById("sonido").src = "sonidos/uno.mp3";
+    break;        
+    case 2:
+    document.getElementById("imagen").src = "imagenes/dos.gif";
+    document.getElementById("sonido").src = "sonidos/dos.mp3";
+    break;        
+    case 3:
+    document.getElementById("imagen").src = "imagenes/tres.gif";
+    document.getElementById("sonido").src = "sonidos/tres.mp3";
+    break;        
+    case 4:
+    document.getElementById("imagen").src = "imagenes/cuatro.gif";
+    document.getElementById("sonido").src = "sonidos/cuatro.mp3";
+    break;       
+    case 5:
+    document.getElementById("imagen").src = "imagenes/cinco.gif";
+    document.getElementById("sonido").src = "sonidos/cinco.mp3";
+    break;         
+    case 6:
+    document.getElementById("imagen").src = "imagenes/seis.gif";
+    document.getElementById("sonido").src = "sonidos/seis.mp3";
+    break;         
+    case 7:
+    document.getElementById("imagen").src = "imagenes/siete.gif";
+    document.getElementById("sonido").src = "sonidos/siete.mp3";
+    break;        
+    case 8:
+    document.getElementById("imagen").src = "imagenes/ocho.gif";
+    document.getElementById("sonido").src = "sonidos/ocho.mp3";
+    break;        
+    case 9:
+    document.getElementById("imagen").src = "imagenes/nueve.gif";
+    document.getElementById("sonido").src = "sonidos/nueve.mp3";
+    break;
+    case 10:
+    document.getElementById("imagen").src = "imagenes/diez.gif";
+    document.getElementById("sonido").src = "sonidos/diez.mp3";
+    break;
+        default:
+            document.getElementById("imagen").src = "imagenes/numeros.gif";
+            document.getElementById("sonido").src = "sonidos/numeros.mp3";
+            break;
+           
+      /*Por defecto mostraremos el gif números y el sonido de números, que indica que el número generado está fuera del rango [0,10]*/
+        
+    
+        
+  }     
+        
+        
+        
+    }   
+        
+        
+        
+    }    
+        
+        
+    
+    
+    </script>
+    
+    
+</head>
+
+
+
+
+
+
+
+<body>
+ 
+   <!-- Música de fondo de la página, aha - Take on me -->
+    <embed src="sonidos/aha.mp3" autostart="true" loop="true" volume="0.00001" width="0" height="0"/>
+    
+    <!-- Dividimos mediante div para organizar cada apartado concreto -->
+    
+<div id="Apartado1">
+   
+    <h1 class="neon pink">
+    <span>M</span>
+    <span>í</span>
+    <span>n</span>    
+    <span>i</span>
+    <span>M</span>
+    <span>o</span>
+    <span id="input1"><input type="text" id="minimo" size="10"/></span>
+    </h1>
+     
+    
+    <h1 class="neon blue">
+    <span>M</span>
+    <span>á</span>
+    <span>x</span>    
+    <span>i</span>
+    <span>M</span>
+    <span>o</span>
+    <span id="input2"><input type="text" id="maximo" size="10"/></span>    
+    </h1>
+    
+</div>
+   
+     
+<div id="Apartado2">
+    
+    <button id="boton" onclick="imagenesysonidos()"></button>
+    
+    
+</div>    
+    
+    
+    <!-- En la cabecera será donde aparezcan los números y sus audios simultáneamente -->
+    
+<div id="Cabecera">
+    
+    <img id="imagen" src="imagenes/numeros.gif" alt="numeros">
+    <audio id="sonido" src="sonidos/numero.mp3" style="display:none;" autoplay></audio>
+
+ 
+    
+</div>    
+    
+    
+  
+    
+</body>
+</html>
